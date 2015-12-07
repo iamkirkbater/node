@@ -129,11 +129,25 @@ var fs = require("fs");
 
 // ----
 
-console.log("deleting ./test directory");
-fs.rmdir("./test", function(err) {
-	if (err) {
-		return console.error(err);
-	}
-	console.log("./test directory deleted.");
-});
+// console.log("deleting ./test directory");
+// fs.rmdir("./test", function(err) {
+// 	if (err) {
+// 		return console.error(err);
+// 	}
+// 	console.log("./test directory deleted.");
+// });
+
+// ----
+
+function printHello() {
+  console.log("Hello World");
+}
+
+// var t = setTimeout(printHello, 2000);
+// clearTimeout(t);
+
+setInterval(printHello, 2000);
+
+
+
 console.log('Program Ended.');
